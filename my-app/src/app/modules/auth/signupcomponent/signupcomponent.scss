@@ -5,7 +5,7 @@
     @include m.flex(center, center);
     min-height: 100vh;
     background-color: var(--blue-50);
-    padding: f.rem(16px) f.rem(20px);
+    padding: f.rem(16px) f.rem(32px);
 }
 
 .form_card {
@@ -14,7 +14,7 @@
     box-shadow: 0 f.rem(4px) f.rem(24px) var(--box-shadow-100);
     padding: f.rem(16px) f.rem(20px);
     width: 100%;
-    max-width: f.rem(520px);
+    max-width: f.rem(620px);
 
     .form_title {
         @include m.fontStyle(f.rem(28px), f.rem(36px), 700);

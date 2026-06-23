@@ -8,6 +8,6 @@ import { Forgetcomponent } from './forgetcomponent/forgetcomponent';
 
 @NgModule({
   declarations: [],
-  imports: [Logincomponnet,Signupcomponent,Forgetcomponent,CommonModule, AuthRoutingModule],
+  imports: [Logincomponnet, Signupcomponent, Forgetcomponent, CommonModule, AuthRoutingModule],
 })
 export class AuthModule {}

@@ -28,11 +28,13 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/cats-ui-lib/assets"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss", "node_modules/cats-ui-lib/styles/_index.scss"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
