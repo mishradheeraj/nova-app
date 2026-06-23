@@ -14,7 +14,7 @@ const routes: Routes = [
     component:Signupcomponent
   },
   {
-    path:'forget',
+    path:'forget',  
     component:Forgetcomponent
   }
 ];

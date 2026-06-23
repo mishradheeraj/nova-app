@@ -1,0 +1,53 @@
+@use "../../../../scss/sass-utils/function" as f;
+@use "../../../../scss/sass-utils/mixin" as m;
+
+.form_page {
+    @include m.flex(center, center);
+    min-height: 100vh;
+    background-color: var(--blue-50);
+    padding: f.rem(16px) f.rem(20px);
+}
+
+.form_card {
+    background-color: var(--white);
+    border-radius: f.rem(12px);
+    box-shadow: 0 f.rem(4px) f.rem(24px) var(--box-shadow-100);
+    padding: f.rem(16px) f.rem(20px);
+    width: 100%;
+    max-width: f.rem(520px);
+
+    .form_title {
+        @include m.fontStyle(f.rem(28px), f.rem(36px), 700);
+        color: var(--black-800);
+        margin-bottom: f.rem(4px);
+    }
+
+    .form_subtitle {
+        @include m.fontStyle(f.rem(14px), f.rem(22px));
+        color: var(--light-grey);
+        margin-bottom: f.rem(16px);
+    }
+
+    .terms_label {
+        @include m.flex(flex-start, center, f.rem(10px));
+        cursor: pointer;
+        font-weight: 500;
+        color: var(--neutral-500);
+
+        input[type="checkbox"] {
+            @include m.box(f.rem(18px), f.rem(18px));
+            accent-color: var(--blue-600);
+            cursor: pointer;
+        }
+
+        .terms_link {
+            color: var(--blue-600);
+            text-decoration: underline;
+        }
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        margin-top: f.rem(8px);
+    }
+}

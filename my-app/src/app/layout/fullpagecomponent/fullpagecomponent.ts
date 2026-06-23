@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-fullpagecomponent',
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './fullpagecomponent.html',
   styleUrl: './fullpagecomponent.scss',
 })
