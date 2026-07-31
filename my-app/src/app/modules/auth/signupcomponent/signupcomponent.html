@@ -1,61 +1,99 @@
-<div class="form_page">
-  <div class="form_card myForm">
-    <h2 class="form_title">Create Account</h2>
-    <p class="form_subtitle">Fill in the details below to register</p>
+<div class="signup_page">
 
-    <form [formGroup]="myform">
-      <div class="row_div">
-        <label>Full Name <sup>*</sup></label>
-        <cats-ui-input [inputConfig]="inputConfig" required formControlName="fname">
-        </cats-ui-input>
+  <!-- Left branding panel -->
+  <div class="signup_banner">
+    <div class="banner_content">
+      <div class="brand_logo">
+        <span class="logo_icon">N</span>
+        <span class="logo_text">Nova</span>
       </div>
-
-      <div class="row_div">
-        <label>Email Address <sup>*</sup></label>
-        <cats-ui-input [inputConfig]="inputConfig" required formControlName="email">
-        </cats-ui-input>
-      </div>
-
-      <div class="row_div">
-        <label>Username</label>
-        <cats-ui-input [inputConfig]="inputConfig" required formControlName="username" />
-      </div>
-
-      <div class="row_div">
-        <label>Password <sup>*</sup></label>
-        <cats-ui-input [inputConfig]="inputConfig" required formControlName="pass" />
-      </div>
-
-      <div class="row_div">
-        <label>Confirm Password <sup>*</sup></label>
-        <cats-ui-input [inputConfig]="inputConfig" required formControlName="cpass" />
-      </div>
-
-      <div class="row_div">
-        <label>Phone Number</label>
-        <cats-ui-input [inputConfig]="inputConfig" required formControlName="number" />
-      </div>
-
-      <div class="row_div">
-        <label>Date of Birth</label>
-        <cats-ui-custom-date-picker
-          [config]="{ mode: 'single', time: true, parentDateFormat: 'MM/dd/yyyy' }"
-          (applied)="displayData($event)"
-          formControlName="date"
-        >
-        </cats-ui-custom-date-picker>
-      </div>
-
-      <div class="row_div terms_row">
-        <label class="terms_label">
-          <input type="checkbox" />
-          <span>I accept the <a href="#" class="terms_link">Terms &amp; Conditions</a></span>
-        </label>
-      </div>
-
-      <div class="row_div">
-        <button type="button" class="fill_btn" (click)="onsubmit()">Register</button>
-      </div>
-    </form>
+      <h1 class="banner_title">Join Nova Today</h1>
+      <p class="banner_desc">Create your account and unlock a seamless experience built for you.</p>
+      <ul class="banner_features">
+        <li><span class="feature_dot"></span>Secure &amp; private by default</li>
+        <li><span class="feature_dot"></span>Access from anywhere, anytime</li>
+        <li><span class="feature_dot"></span>Powerful tools at your fingertips</li>
+      </ul>
+    </div>
+    <div class="banner_circle banner_circle--1"></div>
+    <div class="banner_circle banner_circle--2"></div>
   </div>
+
+  <!-- Right form panel -->
+  <div class="signup_form_panel">
+    <div class="signup_form_card">
+      <div class="form_header">
+        <h2 class="form_title">Create Account</h2>
+        <p class="form_subtitle">Fill in the details below to get started</p>
+      </div>
+
+      <form [formGroup]="myform" class="signup_form">
+
+        <!-- Row 1: Full Name + Email -->
+        <div class="form_grid">
+          <div class="field_group">
+            <label class="field_label">Full Name <sup>*</sup></label>
+            <cats-ui-input [inputConfig]="inputConfig" required formControlName="fname"></cats-ui-input>
+          </div>
+          <div class="field_group">
+            <label class="field_label">Email Address <sup>*</sup></label>
+            <cats-ui-input [inputConfig]="inputConfig" required formControlName="email"></cats-ui-input>
+          </div>
+        </div>
+
+        <!-- Row 2: Username + Phone -->
+        <div class="form_grid">
+          <div class="field_group">
+            <label class="field_label">Username</label>
+            <cats-ui-input [inputConfig]="inputConfig" required formControlName="username"></cats-ui-input>
+          </div>
+          <div class="field_group">
+            <label class="field_label">Phone Number</label>
+            <cats-ui-input [inputConfig]="inputConfig" required formControlName="number"></cats-ui-input>
+          </div>
+        </div>
+
+        <!-- Row 3: Password + Confirm Password -->
+        <div class="form_grid">
+          <div class="field_group">
+            <label class="field_label">Password <sup>*</sup></label>
+            <cats-ui-input [inputConfig]="inputConfig" required formControlName="pass"></cats-ui-input>
+          </div>
+          <div class="field_group">
+            <label class="field_label">Confirm Password <sup>*</sup></label>
+            <cats-ui-input [inputConfig]="inputConfig" required formControlName="cpass"></cats-ui-input>
+          </div>
+        </div>
+
+        <!-- Row 4: Date of Birth (full width) -->
+        <div class="field_group">
+          <label class="field_label">Date of Birth</label>
+          <cats-ui-custom-date-picker
+            [config]="{ mode: 'single', time: true, parentDateFormat: 'MM/dd/yyyy' }"
+            (applied)="displayData($event)"
+            formControlName="date">
+          </cats-ui-custom-date-picker>
+        </div>
+
+        <!-- Terms -->
+        <div class="terms_row">
+          <label class="terms_label">
+            <input type="checkbox" />
+            <span>I accept the <a href="#" class="terms_link">Terms &amp; Conditions</a></span>
+          </label>
+        </div>
+
+        <!-- Submit -->
+        <button type="button" class="submit_btn" (click)="onsubmit()">
+          <span>Create Account</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
 </div>

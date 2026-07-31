@@ -1,0 +1,234 @@
+@use "../../../../scss/sass-utils/function" as f;
+@use "../../../../scss/sass-utils/mixin" as m;
+
+.forget_page {
+  @include m.flex(flex-start, stretch);
+  min-height: 100vh;
+  background-color: var(--blue-50);
+}
+
+// ── Left Banner ──────────────────────────────────────────
+.forget_banner {
+  position: relative;
+  @include m.flex(center, flex-start, 0, column);
+  @include m.box(42%, 100%);
+  min-height: 100vh;
+  background: linear-gradient(145deg, var(--blue-800) 0%, var(--blue-700) 50%, var(--blue-600) 100%);
+  padding: f.rem(48px) f.rem(40px);
+  overflow: hidden;
+
+  .banner_content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .brand_logo {
+    @include m.flex(flex-start, center, f.rem(10px));
+    margin-bottom: f.rem(48px);
+
+    .logo_icon {
+      @include m.box(f.rem(40px), f.rem(40px));
+      @include m.flex(center, center);
+      @include m.fontStyle(f.rem(20px), 1, 700);
+      background-color: var(--white);
+      color: var(--blue-800);
+      border-radius: f.rem(10px);
+    }
+
+    .logo_text {
+      @include m.fontStyle(f.rem(22px), 1, 700);
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .banner_title {
+    @include m.fontStyle(f.rem(36px), f.rem(44px), 700);
+    color: var(--white);
+    margin-bottom: f.rem(16px);
+  }
+
+  .banner_desc {
+    @include m.fontStyle(f.rem(15px), f.rem(24px));
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: f.rem(36px);
+    max-width: f.rem(320px);
+  }
+
+  .banner_features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include m.flex(flex-start, flex-start, f.rem(14px), column);
+
+    li {
+      @include m.flex(flex-start, center, f.rem(10px));
+      @include m.fontStyle(f.rem(14px), f.rem(22px), 500);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .feature_dot {
+      @include m.box(f.rem(8px), f.rem(8px));
+      border-radius: 50%;
+      background-color: var(--white);
+      flex-shrink: 0;
+    }
+  }
+
+  .banner_circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    z-index: 1;
+
+    &--1 {
+      @include m.box(f.rem(320px), f.rem(320px));
+      bottom: f.rem(-80px);
+      right: f.rem(-80px);
+    }
+
+    &--2 {
+      @include m.box(f.rem(180px), f.rem(180px));
+      top: f.rem(40px);
+      right: f.rem(30px);
+    }
+  }
+}
+
+// ── Right Form Panel ─────────────────────────────────────
+.forget_form_panel {
+  flex: 1;
+  @include m.flex(center, center);
+  padding: f.rem(32px) f.rem(40px);
+}
+
+.forget_form_card {
+  width: 100%;
+  max-width: f.rem(460px);
+  background-color: var(--white);
+  border-radius: f.rem(16px);
+  box-shadow: 0 f.rem(8px) f.rem(32px) var(--box-shadow-100);
+  padding: f.rem(40px);
+
+  .form_header {
+    margin-bottom: f.rem(28px);
+    padding-bottom: f.rem(20px);
+    border-bottom: 1px solid var(--neutral-100);
+
+    .icon_wrap {
+      @include m.box(f.rem(52px), f.rem(52px));
+      @include m.flex(center, center);
+      background-color: var(--blue-100);
+      border-radius: f.rem(12px);
+      color: var(--blue-700);
+      margin-bottom: f.rem(16px);
+    }
+
+    .form_title {
+      @include m.fontStyle(f.rem(26px), f.rem(34px), 700);
+      color: var(--black-800);
+      margin-bottom: f.rem(6px);
+    }
+
+    .form_subtitle {
+      @include m.fontStyle(f.rem(14px), f.rem(22px));
+      color: var(--light-grey);
+    }
+  }
+}
+
+// ── Form Layout ───────────────────────────────────────────
+.forget_form {
+  @include m.flex(flex-start, stretch, f.rem(20px), column);
+}
+
+.field_group {
+  @include m.flex(flex-start, flex-start, f.rem(6px), column);
+
+  .field_label {
+    @include m.fontStyle(f.rem(13px), f.rem(20px), 600);
+    color: var(--neutral-500);
+
+    sup {
+      color: var(--blue-600);
+      font-size: f.rem(12px);
+    }
+  }
+
+  cats-ui-input {
+    width: 100%;
+  }
+}
+
+// ── Submit Button ─────────────────────────────────────────
+.submit_btn {
+  @include m.flex(center, center, f.rem(8px));
+  width: 100%;
+  padding: f.rem(13px) f.rem(24px);
+  background: linear-gradient(135deg, var(--blue-800), var(--blue-600));
+  color: var(--white);
+  border: none;
+  border-radius: f.rem(10px);
+  @include m.fontStyle(f.rem(15px), f.rem(22px), 600);
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  margin-top: f.rem(4px);
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// ── Back Redirect ─────────────────────────────────────────
+.back_redirect {
+  @include m.fontStyle(f.rem(13px), f.rem(20px));
+  color: var(--light-grey);
+  text-align: center;
+  margin-top: f.rem(4px);
+
+  .back_link {
+    color: var(--blue-600);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ── Success State ─────────────────────────────────────────
+.success_state {
+  @include m.flex(center, center, f.rem(16px), column);
+  text-align: center;
+  padding: f.rem(16px) 0;
+
+  .success_icon {
+    @include m.box(f.rem(72px), f.rem(72px));
+    @include m.flex(center, center);
+    background-color: var(--green-100);
+    border-radius: 50%;
+    color: var(--green-600);
+  }
+
+  .success_title {
+    @include m.fontStyle(f.rem(24px), f.rem(32px), 700);
+    color: var(--black-800);
+  }
+
+  .success_desc {
+    @include m.fontStyle(f.rem(14px), f.rem(22px));
+    color: var(--light-grey);
+    max-width: f.rem(340px);
+  }
+
+  .success_btn {
+    margin-top: f.rem(8px);
+  }
+}

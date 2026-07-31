@@ -1,1 +1,67 @@
-<p>logincomponnet works!</p>
+<div class="login_page">
+
+  <!-- Left branding panel -->
+  <div class="login_banner">
+    <div class="banner_content">
+      <div class="brand_logo">
+        <span class="logo_icon">N</span>
+        <span class="logo_text">Nova</span>
+      </div>
+      <h1 class="banner_title">Welcome Back!</h1>
+      <p class="banner_desc">Sign in to your account and pick up right where you left off.</p>
+      <ul class="banner_features">
+        <li><span class="feature_dot"></span>Secure &amp; encrypted login</li>
+        <li><span class="feature_dot"></span>Access your dashboard instantly</li>
+        <li><span class="feature_dot"></span>Stay in sync across all devices</li>
+      </ul>
+    </div>
+    <div class="banner_circle banner_circle--1"></div>
+    <div class="banner_circle banner_circle--2"></div>
+  </div>
+
+  <!-- Right form panel -->
+  <div class="login_form_panel">
+    <div class="login_form_card">
+
+      <div class="form_header">
+        <h2 class="form_title">Sign In</h2>
+        <p class="form_subtitle">Enter your credentials to access your account</p>
+      </div>
+
+      <form [formGroup]="loginForm" class="login_form">
+
+        <div class="field_group">
+          <label class="field_label">Email Address <sup>*</sup></label>
+          <cats-ui-input [inputConfig]="emailConfig" required formControlName="email"></cats-ui-input>
+        </div>
+
+        <div class="field_group">
+          <label class="field_label">Password <sup>*</sup></label>
+          <cats-ui-input [inputConfig]="passwordConfig" required formControlName="password"></cats-ui-input>
+        </div>
+
+        <div class="form_options">
+          <label class="remember_label">
+            <input type="checkbox" formControlName="rememberMe" />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot_link">Forgot password?</a>
+        </div>
+
+        <button type="button" class="submit_btn" (click)="onLogin()">
+          <span>Sign In</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+        <p class="signup_redirect">
+          Don't have an account? <a href="#" class="signup_link">Create one</a>
+        </p>
+
+      </form>
+    </div>
+  </div>
+
+</div>
