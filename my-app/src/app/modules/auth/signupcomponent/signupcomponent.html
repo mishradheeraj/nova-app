@@ -34,6 +34,11 @@
           <div class="field_group">
             <label class="field_label">Full Name <sup>*</sup></label>
             <cats-ui-input [inputConfig]="inputConfig" required formControlName="fname"></cats-ui-input>
+            <div class="text_danger">
+             @if((myform.controls['fname'].touched || isSubmitted) && myform.controls['fname'].errors?.['required']){
+               <span>This field is required</span>
+             }
+            </div>
           </div>
           <div class="field_group">
             <label class="field_label">Email Address <sup>*</sup></label>

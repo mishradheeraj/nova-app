@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { InputComponent } from 'cats-ui-lib';
 
 @Component({
   selector: 'app-logincomponnet',
-  imports: [FormsModule, ReactiveFormsModule, InputComponent],
+  imports: [FormsModule, ReactiveFormsModule, RouterLink, InputComponent],
   templateUrl: './logincomponnet.html',
   styleUrl: './logincomponnet.scss',
 })

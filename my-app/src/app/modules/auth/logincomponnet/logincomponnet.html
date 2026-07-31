@@ -45,7 +45,7 @@
             <input type="checkbox" formControlName="rememberMe" />
             <span>Remember me</span>
           </label>
-          <a href="#" class="forgot_link">Forgot password?</a>
+          <a routerLink="/auth/forget" class="forgot_link">Forgot password?</a>
         </div>
 
         <button type="button" class="submit_btn" (click)="onLogin()">
@@ -57,7 +57,7 @@
         </button>
 
         <p class="signup_redirect">
-          Don't have an account? <a href="#" class="signup_link">Create one</a>
+          Don't have an account? <a routerLink="/auth/create" class="signup_link">Create one</a>
         </p>
 
       </form>

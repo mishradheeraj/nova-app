@@ -12,7 +12,7 @@ export const routes: Routes = [
   {
     path: 'auth',
     component: Blankpagecomponent,
-    loadChildren: () => import('./modules/auth/auth-module').then(m => m.AuthModule)
+    loadChildren: () => import('./modules/auth/auth-routing-module').then(m => m.AuthRoutingModule)
   },
   {
     path: 'dashboard',
