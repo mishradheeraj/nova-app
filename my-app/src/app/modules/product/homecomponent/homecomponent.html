@@ -1,0 +1,11 @@
+<marquee>
+  <h2>homecomponent works!</h2>
+</marquee>
+<div class="">
+  <button class="cats-btn primary-btn" (click)="openModal()">Open Modal</button>
+</div>
+
+<ng-template #myTemplateupload let-dialogRef="dialogRef">
+  <h1>Modal Content</h1>
+  <span (click)="close()">X</span>
+</ng-template>

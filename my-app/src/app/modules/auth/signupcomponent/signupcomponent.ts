@@ -22,11 +22,15 @@ export class Signupcomponent {
   }
   myform = new FormGroup({
     fname: new FormControl('', [Validators.required]),
-    email: new FormControl(''),
-    username: new FormControl(''),
-    pass: new FormControl(''),
-    cpass: new FormControl(''),
-    number: new FormControl(''),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    username: new FormControl('', [
+      Validators.required,
+      Validators.minLength(4),
+      Validators.maxLength(50),
+    ]),
+    pass: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    cpass: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    number: new FormControl('', [Validators.required, Validators.pattern('^[0-9]+$')]),
     date: new FormControl(''),
   });
 

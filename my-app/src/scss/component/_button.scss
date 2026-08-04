@@ -5,7 +5,7 @@
 button {
   border: f.rem(1px) solid transparent;
   padding: 0 f.rem(28px);
-  height: f.rem(56px);
+  height: f.rem(48px);
   min-width: f.rem(142px);
   @include m.flex(center, center, f.rem(12px));
   border-radius: f.rem(8px);
@@ -24,6 +24,7 @@ button {
     background-color: var(--blue-600);
     color: var(--white);
   }
+
   &.fill_lightBlue_btn {
     background-color: var(--blue-50);
     color: var(--blue-600);
@@ -34,6 +35,7 @@ button {
     color: var(--blue-300);
     pointer-events: none;
   }
+
   &.gray_fill_btn {
     background-color: var(--neutral-100);
     color: var(--neutral-400);
@@ -64,6 +66,7 @@ button {
     background-color: var(--neutral-100);
     color: var(--neutral-400);
   }
+
   &.no_outline_btn {
     background-color: var(--blue-50);
     color: var(--blue-600);
