@@ -12,4 +12,8 @@ export class ApiService {
   createProfile(profileData: any): Observable<any> {
     return this.http.post(`${this.apiUrl}profile`, profileData);
   }
+
+  getAllProfiles(): Observable<any> {
+    return this.http.get(`${this.apiUrl}profile`);
+  }
 }

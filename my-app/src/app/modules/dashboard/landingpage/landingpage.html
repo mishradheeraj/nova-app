@@ -1,0 +1,10 @@
+<div class="table_wrapper">
+  <cats-data-grid
+    [rowData]="rowData"
+    [colDefs]="coldefs"
+    [paginationRequired]="true"
+    (onPaginationChange)="onpagination($event)"
+    [settingsRequired]="true"
+    [totalRecords]="totalRecords"
+  ></cats-data-grid>
+</div>

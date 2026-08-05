@@ -32,9 +32,17 @@
               {
                 "glob": "**/*",
                 "input": "node_modules/cats-ui-lib/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/cats-data-grid/assets"
               }
             ],
-            "styles": ["src/styles.scss", "node_modules/cats-ui-lib/styles/_index.scss"],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/cats-ui-lib/styles/_index.scss",
+              "node_modules/cats-data-grid/styles/_index.scss"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
