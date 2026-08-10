@@ -10,6 +10,7 @@ import { DialogBoxService, InputComponent, CustomDatePickerComponent, DateRange,
 })
 export class Actionrendrer {
   dialogRef: any;
+  params: any;
   isSubmitted = false;
 
   @ViewChild('myTemplateupload') template!: TemplateRef<any>;
@@ -30,6 +31,10 @@ export class Actionrendrer {
   passwordConfig: any = { type: 'password', placeholder: 'Enter password' };
 
   openModal() {
+    if (this.params?.data) {
+      const data = this.params.data;
+      this.editForm.patchValue(data);
+    }
     this.dialogRef = this.dialogBoxService.open(this.template, {
       class: 'edit_modal',
       closeOnBackdropClick: false,
@@ -51,4 +56,11 @@ export class Actionrendrer {
     console.log('Updated values:', this.editForm.value);
     this.close();
   }
+
+   cellInit(params: any) {
+    this.params = params   
+    console.log('params:', this.params);
+  }
+
+
 }

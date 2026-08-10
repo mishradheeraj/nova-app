@@ -16,4 +16,9 @@ export class ApiService {
   getAllProfiles(): Observable<any> {
     return this.http.get(`${this.apiUrl}profile`);
   }
+  
+  /* ---- EditProfile API ---- */
+  // editProfile(id: any, profileData: any): Observable<any> {
+  //   return this.http.put(`${this.apiUrl}profile/${id}`, profileData);
+  // }
 }

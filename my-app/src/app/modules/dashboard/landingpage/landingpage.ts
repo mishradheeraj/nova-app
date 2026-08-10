@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CatsDataGridComponent } from 'cats-data-grid';
 import { ApiService } from '../../../service/api-servic';
 import { Actionrendrer } from '../../../shared/actionrendrer/actionrendrer';
@@ -13,6 +13,7 @@ export class Landingpage implements OnInit {
   settingsClicked: boolean = false;
   totalRecords: number = 0;
   rowData: any[] = [];
+  tableOption = signal({ parentRef: this });
   constructor(private service: ApiService) {}
   ngOnInit(): void {
     this.getAllProfiles();
@@ -25,6 +26,7 @@ export class Landingpage implements OnInit {
     this.service.getAllProfiles().subscribe({
       next: (res) => {
         this.rowData = res;
+        console.log('rowData:', this.rowData);
         this.totalRecords = res.length;
       },
     });
