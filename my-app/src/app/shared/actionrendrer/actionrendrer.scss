@@ -1,0 +1,197 @@
+@use '../../../scss/sass-utils/function' as f;
+@use '../../../scss/sass-utils/mixin' as m;
+
+// ── Action Buttons ────────────────────────────────────────
+.action-btns {
+    @include m.flex(flex-start, center, f.rem(8px));
+
+    .action-btn {
+        min-width: unset;
+        @include m.box(f.rem(36px), f.rem(36px));
+        padding: 0;
+        border-radius: f.rem(6px);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 f.rem(4px) f.rem(10px) var(--box-shadow-100);
+        }
+    }
+
+    .delete-btn {
+        background-color: var(--red-200);
+        color: var(--red-700);
+        border: f.rem(1px) solid var(--red-100);
+    }
+}
+
+// ── Edit Modal ────────────────────────────────────────────
+.edit_modal {
+    width: f.rem(660px);
+    background-color: var(--white);
+    border-radius: f.rem(16px);
+    overflow: hidden;
+    box-shadow: 0 f.rem(20px) f.rem(60px) var(--box-shadow-100);
+}
+
+// ── Modal Header ──────────────────────────────────────────
+.modal_header {
+    @include m.flex(space-between, center);
+    padding: f.rem(20px) f.rem(24px);
+    background: linear-gradient(135deg, var(--blue-800), var(--blue-600));
+
+    .modal_header_left {
+        @include m.flex(flex-start, center, f.rem(14px));
+    }
+
+    .modal_avatar {
+        @include m.box(f.rem(44px), f.rem(44px));
+        @include m.flex(center, center);
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: f.rem(10px);
+        color: var(--white);
+        flex-shrink: 0;
+    }
+
+    .modal_title {
+        @include m.fontStyle(f.rem(18px), f.rem(26px), 700);
+        color: var(--white);
+        margin-bottom: f.rem(2px);
+    }
+
+    .modal_subtitle {
+        @include m.fontStyle(f.rem(12px), f.rem(18px));
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .close_btn {
+        @include m.box(f.rem(32px), f.rem(32px));
+        @include m.flex(center, center);
+        min-width: unset;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: f.rem(1px) solid rgba(255, 255, 255, 0.25);
+        border-radius: f.rem(8px);
+        color: var(--white);
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    }
+}
+
+// ── Form Body ─────────────────────────────────────────────
+.edit_form {
+    @include m.flex(flex-start, stretch, 0, column);
+    max-height: f.rem(520px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: f.rem(4px);
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--neutral-50);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--neutral-300);
+        border-radius: f.rem(4px);
+    }
+}
+
+// ── Form Section ──────────────────────────────────────────
+.form_section {
+    padding: f.rem(20px) f.rem(24px);
+    @include m.flex(flex-start, stretch, f.rem(16px), column);
+
+    &+.form_section {
+        border-top: f.rem(1px) solid var(--neutral-50);
+    }
+}
+
+.section_label {
+    @include m.flex(flex-start, center, f.rem(8px));
+    @include m.fontStyle(f.rem(11px), f.rem(16px), 700);
+    color: var(--blue-600);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+    svg {
+        flex-shrink: 0;
+        stroke: var(--blue-600);
+    }
+}
+
+// ── Form Grid & Fields ────────────────────────────────────
+.form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: f.rem(16px);
+}
+
+.field_group {
+    @include m.flex(flex-start, flex-start, f.rem(6px), column);
+
+    .field_label {
+        @include m.fontStyle(f.rem(12px), f.rem(18px), 600);
+        color: var(--neutral-500);
+
+        sup {
+            color: var(--blue-600);
+            font-size: f.rem(11px);
+        }
+    }
+
+    cats-ui-input,
+    cats-ui-custom-date-picker {
+        width: 100%;
+    }
+}
+
+.text_danger {
+    color: var(--red);
+    @include m.fontStyle(f.rem(11px), f.rem(16px));
+}
+
+// ── Modal Footer ──────────────────────────────────────────
+.modal_footer {
+    @include m.flex(flex-end, center, f.rem(12px));
+    padding: f.rem(16px) f.rem(24px);
+    border-top: f.rem(1px) solid var(--neutral-100);
+    background-color: var(--neutral-50);
+
+    .cancel_btn {
+        min-width: f.rem(100px);
+        height: f.rem(38px);
+        padding: 0 f.rem(20px);
+        @include m.fontStyle(f.rem(13px), f.rem(20px), 600);
+    }
+
+    .update_btn {
+        @include m.flex(center, center, f.rem(8px));
+        min-width: f.rem(130px);
+        height: f.rem(38px);
+        padding: 0 f.rem(20px);
+        @include m.fontStyle(f.rem(13px), f.rem(20px), 600);
+        background: linear-gradient(135deg, var(--blue-800), var(--blue-600));
+        border: none;
+        transition: opacity 0.2s ease, transform 0.15s ease;
+
+        &:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        svg {
+            flex-shrink: 0;
+        }
+    }
+}
+
+::ng-deep .edit_modal {
+    height: unset !important;
+    width: f.rem(636px) !important;
+}
