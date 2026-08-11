@@ -1,7 +1,8 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit, signal } from '@angular/core';
 import { CatsDataGridComponent } from 'cats-data-grid';
 import { ApiService } from '../../../service/api-servic';
 import { Actionrendrer } from '../../../shared/actionrendrer/actionrendrer';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-landingpage',
@@ -9,14 +10,22 @@ import { Actionrendrer } from '../../../shared/actionrendrer/actionrendrer';
   templateUrl: './landingpage.html',
   styleUrl: './landingpage.scss',
 })
-export class Landingpage implements OnInit {
+export class Landingpage implements OnInit, OnDestroy {
   settingsClicked: boolean = false;
   totalRecords: number = 0;
   rowData: any[] = [];
   tableOption = signal({ parentRef: this });
+  private refreshSub!: Subscription;
   constructor(private service: ApiService) {}
   ngOnInit(): void {
     this.getAllProfiles();
+    this.refreshSub = this.service.refreshProfiles$.subscribe(() => {
+      this.getAllProfiles();
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.refreshSub?.unsubscribe();
   }
 
   onpagination(event: any) {

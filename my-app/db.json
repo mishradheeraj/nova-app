@@ -1,383 +1,340 @@
 {
   "profile": [
     {
-      "id": "1",
-      "fname": "Akshay Kumar",
-      "email": "Akshay@in2ittech.com",
-      "username": "Akshay.kumar",
-      "pass": "Akshay@123",
-      "cpass": "Akshay@123",
+      "fname": "Dheeraj Mishra",
+      "email": "dheeraj.mishra@in2ittech.com",
+      "username": "dheeraj.mishra",
       "number": "8826749068",
+      "pass": "Dheeraj@123",
+      "cpass": "Dheeraj@123",
       "date": {
         "date": "09/17/2000",
-        "time": "11:00 AM",
+        "time": "09:30 AM",
+        "meridiem": "PM"
+      },
+      "id": "1"
+    },
+    {
+      "id": "3",
+      "fname": "Priya Verma",
+      "email": "priya.verma@in2ittech.com",
+      "username": "priya.verma",
+      "pass": "Priya@123",
+      "cpass": "Priya@123",
+      "number": "9812345678",
+      "date": {
+        "date": "07/22/1999",
+        "time": "02:15 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "4",
+      "fname": "Amit Singh",
+      "email": "amit.singh@in2ittech.com",
+      "username": "amit.singh",
+      "pass": "Amit@123",
+      "cpass": "Amit@123",
+      "number": "9123456780",
+      "date": {
+        "date": "12/11/1997",
+        "time": "10:45 AM",
         "meridiem": "AM"
       }
     },
     {
-      "fname": "Krishankant kushwaha",
-      "email": "krishna@in2ittech.com",
-      "username": "krishna.kant",
-      "pass": "$Hello@321$",
-      "cpass": "$Hello@321$",
-      "number": "9097717481",
+      "id": "5",
+      "fname": "Neha Gupta",
+      "email": "neha.gupta@in2ittech.com",
+      "username": "neha.gupta",
+      "pass": "Neha@123",
+      "cpass": "Neha@123",
+      "number": "9988776655",
       "date": {
-        "date": "09/17/2000",
-        "time": "11:00 AM",
+        "date": "01/30/2001",
+        "time": "01:00 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "6",
+      "fname": "Rohit Yadav",
+      "email": "rohit.yadav@in2ittech.com",
+      "username": "rohit.yadav",
+      "pass": "Rohit@123",
+      "cpass": "Rohit@123",
+      "number": "9876501234",
+      "date": {
+        "date": "05/18/1996",
+        "time": "03:20 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "7",
+      "fname": "Sneha Patel",
+      "email": "sneha.patel@in2ittech.com",
+      "username": "sneha.patel",
+      "pass": "Sneha@123",
+      "cpass": "Sneha@123",
+      "number": "9765432101",
+      "date": {
+        "date": "08/12/2000",
+        "time": "08:30 AM",
+        "meridiem": "AM"
+      }
+    },
+    {
+      "id": "8",
+      "fname": "Vikas Mehta",
+      "email": "vikas.mehta@in2ittech.com",
+      "username": "vikas.mehta",
+      "pass": "Vikas@123",
+      "cpass": "Vikas@123",
+      "number": "9654321098",
+      "date": {
+        "date": "02/14/1995",
+        "time": "05:10 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "9",
+      "fname": "Anjali Rao",
+      "email": "anjali.rao@in2ittech.com",
+      "username": "anjali.rao",
+      "pass": "Anjali@123",
+      "cpass": "Anjali@123",
+      "number": "9543210987",
+      "date": {
+        "date": "11/25/1998",
+        "time": "12:00 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "fname": "Karan Malhotra",
+      "email": "karan.malhotra@in2ittech.com",
+      "username": "karan.malhotra",
+      "number": "9432109876",
+      "pass": "Karan@123",
+      "cpass": "Karan@123",
+      "date": {
+        "date": "10/10/1999",
+        "time": "04:45 PM",
+        "meridiem": "PM"
+      },
+      "id": "10"
+    },
+    {
+      "fname": "Pooja sharma",
+      "email": "pooja.sharma@in2ittech.com",
+      "username": "pooja.sharma",
+      "number": "9321098765",
+      "pass": "Pooja@123",
+      "cpass": "Pooja@123",
+      "date": {
+        "date": "06/19/2000",
+        "time": "11:15 AM",
         "meridiem": "AM"
       },
-      "id": "7fI6vba"
+      "id": "11"
     },
-  {
-    "id": "1",
-    "fname": "Akshay Kumar",
-    "email": "akshay@in2ittech.com",
-    "username": "akshay.kumar",
-    "pass": "Akshay@123",
-    "cpass": "Akshay@123",
-    "number": "8826749068",
-    "date": {
-      "date": "09/17/2000",
-      "time": "11:00 AM",
-      "meridiem": "AM"
+    {
+      "id": "12",
+      "fname": "Arjun Kapoor",
+      "email": "arjun.kapoor@in2ittech.com",
+      "username": "arjun.kapoor",
+      "pass": "Arjun@123",
+      "cpass": "Arjun@123",
+      "number": "9210987654",
+      "date": {
+        "date": "04/28/1997",
+        "time": "02:30 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "13",
+      "fname": "Meera Joshi",
+      "email": "meera.joshi@in2ittech.com",
+      "username": "meera.joshi",
+      "pass": "Meera@123",
+      "cpass": "Meera@123",
+      "number": "9109876543",
+      "date": {
+        "date": "09/09/2001",
+        "time": "10:00 AM",
+        "meridiem": "AM"
+      }
+    },
+    {
+      "id": "14",
+      "fname": "Deepak Chauhan",
+      "email": "deepak.chauhan@in2ittech.com",
+      "username": "deepak.chauhan",
+      "pass": "Deepak@123",
+      "cpass": "Deepak@123",
+      "number": "9098765432",
+      "date": {
+        "date": "01/16/1996",
+        "time": "06:15 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "15",
+      "fname": "Kavita Singh",
+      "email": "kavita.singh@in2ittech.com",
+      "username": "kavita.singh",
+      "pass": "Kavita@123",
+      "cpass": "Kavita@123",
+      "number": "9988112233",
+      "date": {
+        "date": "12/21/1998",
+        "time": "09:00 AM",
+        "meridiem": "AM"
+      }
+    },
+    {
+      "id": "16",
+      "fname": "Nitin Saini",
+      "email": "nitin.saini@in2ittech.com",
+      "username": "nitin.saini",
+      "pass": "Nitin@123",
+      "cpass": "Nitin@123",
+      "number": "8877665544",
+      "date": {
+        "date": "03/07/1995",
+        "time": "01:45 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "17",
+      "fname": "Simran Kaur",
+      "email": "simran.kaur@in2ittech.com",
+      "username": "simran.kaur",
+      "pass": "Simran@123",
+      "cpass": "Simran@123",
+      "number": "8766554433",
+      "date": {
+        "date": "08/29/2000",
+        "time": "03:00 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "18",
+      "fname": "Harsh Vardhan",
+      "email": "harsh.vardhan@in2ittech.com",
+      "username": "harsh.vardhan",
+      "pass": "Harsh@123",
+      "cpass": "Harsh@123",
+      "number": "8655443322",
+      "date": {
+        "date": "11/18/1999",
+        "time": "10:20 AM",
+        "meridiem": "AM"
+      }
+    },
+    {
+      "id": "19",
+      "fname": "Ritika Jain",
+      "email": "ritika.jain@in2ittech.com",
+      "username": "ritika.jain",
+      "pass": "Ritika@123",
+      "cpass": "Ritika@123",
+      "number": "8544332211",
+      "date": {
+        "date": "02/02/1997",
+        "time": "04:10 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "fname": "Manish Tiwari",
+      "email": "manish.tiwari@in2ittech.com",
+      "username": "manish.tiwari",
+      "number": "8433221101",
+      "pass": "Manish@123",
+      "cpass": "Manish@123",
+      "date": {
+        "date": "07/13/1998",
+        "time": "11:40 AM",
+        "meridiem": "AM"
+      },
+      "id": "20"
+    },
+    {
+      "id": "21",
+      "fname": "Sonal Agarwal",
+      "email": "sonal.agarwal@in2ittech.com",
+      "username": "sonal.agarwal",
+      "pass": "Sonal@123",
+      "cpass": "Sonal@123",
+      "number": "8322110099",
+      "date": {
+        "date": "05/09/2000",
+        "time": "09:10 AM",
+        "meridiem": "AM"
+      }
+    },
+    {
+      "id": "22",
+      "fname": "Aditya Roy",
+      "email": "aditya.roy@in2ittech.com",
+      "username": "aditya.roy",
+      "pass": "Aditya@123",
+      "cpass": "Aditya@123",
+      "number": "8211009988",
+      "date": {
+        "date": "10/31/1996",
+        "time": "05:30 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "23",
+      "fname": "Isha Malhotra",
+      "email": "isha.malhotra@in2ittech.com",
+      "username": "isha.malhotra",
+      "pass": "Isha@123",
+      "cpass": "Isha@123",
+      "number": "8100998877",
+      "date": {
+        "date": "04/17/2001",
+        "time": "12:20 PM",
+        "meridiem": "PM"
+      }
+    },
+    {
+      "id": "24",
+      "fname": "Yash Thakur",
+      "email": "yash.thakur@in2ittech.com",
+      "username": "yash.thakur",
+      "pass": "Yash@123",
+      "cpass": "Yash@123",
+      "number": "8099887766",
+      "date": {
+        "date": "06/06/1999",
+        "time": "08:45 AM",
+        "meridiem": "AM"
+      }
+    },
+    {
+      "id": "25",
+      "fname": "Tanvi Saxena",
+      "email": "tanvi.saxena@in2ittech.com",
+      "username": "tanvi.saxena",
+      "pass": "Tanvi@123",
+      "cpass": "Tanvi@123",
+      "number": "7988776655",
+      "date": {
+        "date": "12/05/2000",
+        "time": "02:00 PM",
+        "meridiem": "PM"
+      }
     }
-  },
-  {
-    "id": "2",
-    "fname": "Rahul Sharma",
-    "email": "rahul.sharma@in2ittech.com",
-    "username": "rahul.sharma",
-    "pass": "Rahul@123",
-    "cpass": "Rahul@123",
-    "number": "9876543210",
-    "date": {
-      "date": "03/15/1998",
-      "time": "09:30 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "3",
-    "fname": "Priya Verma",
-    "email": "priya.verma@in2ittech.com",
-    "username": "priya.verma",
-    "pass": "Priya@123",
-    "cpass": "Priya@123",
-    "number": "9812345678",
-    "date": {
-      "date": "07/22/1999",
-      "time": "02:15 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "4",
-    "fname": "Amit Singh",
-    "email": "amit.singh@in2ittech.com",
-    "username": "amit.singh",
-    "pass": "Amit@123",
-    "cpass": "Amit@123",
-    "number": "9123456780",
-    "date": {
-      "date": "12/11/1997",
-      "time": "10:45 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "5",
-    "fname": "Neha Gupta",
-    "email": "neha.gupta@in2ittech.com",
-    "username": "neha.gupta",
-    "pass": "Neha@123",
-    "cpass": "Neha@123",
-    "number": "9988776655",
-    "date": {
-      "date": "01/30/2001",
-      "time": "01:00 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "6",
-    "fname": "Rohit Yadav",
-    "email": "rohit.yadav@in2ittech.com",
-    "username": "rohit.yadav",
-    "pass": "Rohit@123",
-    "cpass": "Rohit@123",
-    "number": "9876501234",
-    "date": {
-      "date": "05/18/1996",
-      "time": "03:20 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "7",
-    "fname": "Sneha Patel",
-    "email": "sneha.patel@in2ittech.com",
-    "username": "sneha.patel",
-    "pass": "Sneha@123",
-    "cpass": "Sneha@123",
-    "number": "9765432101",
-    "date": {
-      "date": "08/12/2000",
-      "time": "08:30 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "8",
-    "fname": "Vikas Mehta",
-    "email": "vikas.mehta@in2ittech.com",
-    "username": "vikas.mehta",
-    "pass": "Vikas@123",
-    "cpass": "Vikas@123",
-    "number": "9654321098",
-    "date": {
-      "date": "02/14/1995",
-      "time": "05:10 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "9",
-    "fname": "Anjali Rao",
-    "email": "anjali.rao@in2ittech.com",
-    "username": "anjali.rao",
-    "pass": "Anjali@123",
-    "cpass": "Anjali@123",
-    "number": "9543210987",
-    "date": {
-      "date": "11/25/1998",
-      "time": "12:00 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "10",
-    "fname": "Karan Malhotra",
-    "email": "karan.malhotra@in2ittech.com",
-    "username": "karan.malhotra",
-    "pass": "Karan@123",
-    "cpass": "Karan@123",
-    "number": "9432109876",
-    "date": {
-      "date": "10/10/1999",
-      "time": "04:45 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "11",
-    "fname": "Pooja Sharma",
-    "email": "pooja.sharma@in2ittech.com",
-    "username": "pooja.sharma",
-    "pass": "Pooja@123",
-    "cpass": "Pooja@123",
-    "number": "9321098765",
-    "date": {
-      "date": "06/19/2000",
-      "time": "11:15 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "12",
-    "fname": "Arjun Kapoor",
-    "email": "arjun.kapoor@in2ittech.com",
-    "username": "arjun.kapoor",
-    "pass": "Arjun@123",
-    "cpass": "Arjun@123",
-    "number": "9210987654",
-    "date": {
-      "date": "04/28/1997",
-      "time": "02:30 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "13",
-    "fname": "Meera Joshi",
-    "email": "meera.joshi@in2ittech.com",
-    "username": "meera.joshi",
-    "pass": "Meera@123",
-    "cpass": "Meera@123",
-    "number": "9109876543",
-    "date": {
-      "date": "09/09/2001",
-      "time": "10:00 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "14",
-    "fname": "Deepak Chauhan",
-    "email": "deepak.chauhan@in2ittech.com",
-    "username": "deepak.chauhan",
-    "pass": "Deepak@123",
-    "cpass": "Deepak@123",
-    "number": "9098765432",
-    "date": {
-      "date": "01/16/1996",
-      "time": "06:15 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "15",
-    "fname": "Kavita Singh",
-    "email": "kavita.singh@in2ittech.com",
-    "username": "kavita.singh",
-    "pass": "Kavita@123",
-    "cpass": "Kavita@123",
-    "number": "9988112233",
-    "date": {
-      "date": "12/21/1998",
-      "time": "09:00 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "16",
-    "fname": "Nitin Saini",
-    "email": "nitin.saini@in2ittech.com",
-    "username": "nitin.saini",
-    "pass": "Nitin@123",
-    "cpass": "Nitin@123",
-    "number": "8877665544",
-    "date": {
-      "date": "03/07/1995",
-      "time": "01:45 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "17",
-    "fname": "Simran Kaur",
-    "email": "simran.kaur@in2ittech.com",
-    "username": "simran.kaur",
-    "pass": "Simran@123",
-    "cpass": "Simran@123",
-    "number": "8766554433",
-    "date": {
-      "date": "08/29/2000",
-      "time": "03:00 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "18",
-    "fname": "Harsh Vardhan",
-    "email": "harsh.vardhan@in2ittech.com",
-    "username": "harsh.vardhan",
-    "pass": "Harsh@123",
-    "cpass": "Harsh@123",
-    "number": "8655443322",
-    "date": {
-      "date": "11/18/1999",
-      "time": "10:20 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "19",
-    "fname": "Ritika Jain",
-    "email": "ritika.jain@in2ittech.com",
-    "username": "ritika.jain",
-    "pass": "Ritika@123",
-    "cpass": "Ritika@123",
-    "number": "8544332211",
-    "date": {
-      "date": "02/02/1997",
-      "time": "04:10 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "20",
-    "fname": "Manish Tiwari",
-    "email": "manish.tiwari@in2ittech.com",
-    "username": "manish.tiwari",
-    "pass": "Manish@123",
-    "cpass": "Manish@123",
-    "number": "8433221100",
-    "date": {
-      "date": "07/13/1998",
-      "time": "11:40 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "21",
-    "fname": "Sonal Agarwal",
-    "email": "sonal.agarwal@in2ittech.com",
-    "username": "sonal.agarwal",
-    "pass": "Sonal@123",
-    "cpass": "Sonal@123",
-    "number": "8322110099",
-    "date": {
-      "date": "05/09/2000",
-      "time": "09:10 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "22",
-    "fname": "Aditya Roy",
-    "email": "aditya.roy@in2ittech.com",
-    "username": "aditya.roy",
-    "pass": "Aditya@123",
-    "cpass": "Aditya@123",
-    "number": "8211009988",
-    "date": {
-      "date": "10/31/1996",
-      "time": "05:30 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "23",
-    "fname": "Isha Malhotra",
-    "email": "isha.malhotra@in2ittech.com",
-    "username": "isha.malhotra",
-    "pass": "Isha@123",
-    "cpass": "Isha@123",
-    "number": "8100998877",
-    "date": {
-      "date": "04/17/2001",
-      "time": "12:20 PM",
-      "meridiem": "PM"
-    }
-  },
-  {
-    "id": "24",
-    "fname": "Yash Thakur",
-    "email": "yash.thakur@in2ittech.com",
-    "username": "yash.thakur",
-    "pass": "Yash@123",
-    "cpass": "Yash@123",
-    "number": "8099887766",
-    "date": {
-      "date": "06/06/1999",
-      "time": "08:45 AM",
-      "meridiem": "AM"
-    }
-  },
-  {
-    "id": "25",
-    "fname": "Tanvi Saxena",
-    "email": "tanvi.saxena@in2ittech.com",
-    "username": "tanvi.saxena",
-    "pass": "Tanvi@123",
-    "cpass": "Tanvi@123",
-    "number": "7988776655",
-    "date": {
-      "date": "12/05/2000",
-      "time": "02:00 PM",
-      "meridiem": "PM"
-    }
-  }
-
   ]
 }

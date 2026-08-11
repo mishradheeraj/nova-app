@@ -195,3 +195,283 @@
     height: unset !important;
     width: f.rem(636px) !important;
 }
+
+// ── Delete Modal ──────────────────────────────────────────
+.delete_modal {
+    position: relative;
+    width: f.rem(400px);
+    background-color: var(--white);
+    border-radius: f.rem(20px);
+    overflow: hidden;
+    box-shadow: 0 f.rem(24px) f.rem(64px) rgba(0, 0, 0, 0.14);
+    @include m.flex(flex-start, center, 0, column);
+    padding: f.rem(40px) f.rem(32px) f.rem(28px);
+    text-align: center;
+
+    .delete_close_btn {
+        position: absolute;
+        top: f.rem(14px);
+        right: f.rem(14px);
+        @include m.box(f.rem(30px), f.rem(30px));
+        @include m.flex(center, center);
+        min-width: unset;
+        padding: 0;
+        background-color: var(--neutral-100);
+        border: f.rem(1px) solid var(--neutral-200);
+        border-radius: f.rem(8px);
+        color: var(--neutral-500);
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            background-color: var(--red-200);
+            border-color: var(--red-100);
+            color: var(--red-700);
+        }
+    }
+}
+
+// ── Delete Illustration ───────────────────────────────────
+.delete_illustration {
+    position: relative;
+    @include m.flex(center, center);
+    @include m.box(f.rem(110px), f.rem(110px));
+    margin-bottom: f.rem(24px);
+}
+
+.delete_icon_ring {
+    position: absolute;
+    border-radius: 50%;
+    border: f.rem(2px) dashed;
+    animation: spin-slow 12s linear infinite;
+
+    &--outer {
+        @include m.box(f.rem(110px), f.rem(110px));
+        border-color: rgba(220, 38, 38, 0.18);
+    }
+
+    &--inner {
+        @include m.box(f.rem(86px), f.rem(86px));
+        border-color: rgba(220, 38, 38, 0.28);
+        animation-direction: reverse;
+        animation-duration: 8s;
+    }
+}
+
+.delete_icon_circle {
+    @include m.box(f.rem(68px), f.rem(68px));
+    @include m.flex(center, center);
+    background: linear-gradient(135deg, #fef2f2, #fee2e2);
+    border-radius: 50%;
+    border: f.rem(2px) solid rgba(220, 38, 38, 0.2);
+    color: #dc2626;
+    box-shadow: 0 f.rem(8px) f.rem(24px) rgba(220, 38, 38, 0.18);
+    z-index: 1;
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// ── Delete Content ────────────────────────────────────────
+.delete_content {
+    @include m.flex(flex-start, center, f.rem(8px), column);
+    margin-bottom: f.rem(28px);
+
+    .delete_title {
+        @include m.fontStyle(f.rem(20px), f.rem(28px), 700);
+        color: var(--neutral-900);
+
+        .delete_name {
+            color: #dc2626;
+        }
+    }
+
+    .delete_subtitle {
+        @include m.fontStyle(f.rem(13px), f.rem(20px));
+        color: var(--neutral-500);
+
+        strong {
+            color: #dc2626;
+            font-weight: 600;
+        }
+    }
+}
+
+// ── Delete Footer ─────────────────────────────────────────
+.delete_footer {
+    @include m.flex(center, center, f.rem(12px));
+    width: 100%;
+
+    .delete_cancel_btn {
+        flex: 1;
+        height: f.rem(40px);
+        @include m.fontStyle(f.rem(13px), f.rem(20px), 600);
+    }
+
+    .delete_confirm_btn {
+        flex: 1;
+        height: f.rem(40px);
+        @include m.flex(center, center, f.rem(8px));
+        @include m.fontStyle(f.rem(13px), f.rem(20px), 600);
+        background: linear-gradient(135deg, #b91c1c, #dc2626);
+        color: var(--white);
+        border: none;
+        border-radius: f.rem(8px);
+        cursor: pointer;
+        transition: opacity 0.2s ease, transform 0.15s ease;
+
+        &:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    }
+}
+
+::ng-deep .delete_modal {
+    height: unset !important;
+    min-height: f.rem(432px);
+    width: f.rem(636px) !important;
+
+    .delete_illustration {
+        @include m.box(f.rem(308px), f.rem(180px));
+    }
+
+
+}
+
+
+// ── Offcanvas ─────────────────────────────────────────────
+.offcanvas_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1040;
+    animation: fadeIn 0.2s ease;
+}
+
+.offcanvas_panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: f.rem(380px);
+    background: var(--white);
+    box-shadow: f.rem(-8px) 0 f.rem(40px) rgba(0, 0, 0, 0.12);
+    z-index: 1050;
+    @include m.flex(flex-start, stretch, 0, column);
+    animation: slideInRight 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+// ── Offcanvas Header ──────────────────────────────────────
+.offcanvas_header {
+    @include m.flex(space-between, center);
+    padding: f.rem(20px) f.rem(20px);
+    background: linear-gradient(135deg, var(--blue-800), var(--blue-600));
+    flex-shrink: 0;
+
+    .offcanvas_header_left {
+        @include m.flex(flex-start, center, f.rem(12px));
+    }
+
+    .offcanvas_avatar {
+        @include m.box(f.rem(42px), f.rem(42px));
+        @include m.flex(center, center);
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: f.rem(10px);
+        color: var(--white);
+        flex-shrink: 0;
+    }
+
+    .offcanvas_title {
+        @include m.fontStyle(f.rem(16px), f.rem(24px), 700);
+        color: var(--white);
+        margin-bottom: f.rem(2px);
+    }
+
+    .offcanvas_subtitle {
+        @include m.fontStyle(f.rem(11px), f.rem(16px));
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .offcanvas_close_btn {
+        @include m.box(f.rem(32px), f.rem(32px));
+        @include m.flex(center, center);
+        min-width: unset;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.15);
+        border: f.rem(1px) solid rgba(255, 255, 255, 0.25);
+        border-radius: f.rem(8px);
+        color: var(--white);
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.28);
+        }
+    }
+}
+
+// ── Offcanvas Body ────────────────────────────────────────
+.offcanvas_body {
+    flex: 1;
+    overflow-y: auto;
+    padding: f.rem(20px);
+    @include m.flex(flex-start, stretch, f.rem(4px), column);
+
+    &::-webkit-scrollbar { width: f.rem(4px); }
+    &::-webkit-scrollbar-track { background: var(--neutral-50); }
+    &::-webkit-scrollbar-thumb { background: var(--neutral-300); border-radius: f.rem(4px); }
+}
+
+// ── View Section ──────────────────────────────────────────
+.view_section {
+    background: var(--neutral-50);
+    border-radius: f.rem(10px);
+    padding: f.rem(14px) f.rem(16px);
+    margin-bottom: f.rem(12px);
+
+    .view_section_label {
+        @include m.fontStyle(f.rem(10px), f.rem(16px), 700);
+        color: var(--blue-600);
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        margin-bottom: f.rem(10px);
+    }
+}
+
+.view_row {
+    @include m.flex(space-between, center);
+    padding: f.rem(8px) 0;
+    border-bottom: f.rem(1px) solid var(--neutral-100);
+
+    &:last-child { border-bottom: none; }
+
+    .view_key {
+        @include m.fontStyle(f.rem(12px), f.rem(18px), 600);
+        color: var(--neutral-500);
+    }
+
+    .view_val {
+        @include m.fontStyle(f.rem(13px), f.rem(18px), 500);
+        color: var(--neutral-900);
+        text-align: right;
+        word-break: break-all;
+    }
+}
